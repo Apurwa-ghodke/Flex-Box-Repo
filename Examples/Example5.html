@@ -1,0 +1,40 @@
+<!-- Example 5: Flex Grow, Shrink, and Basis -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Grow/Shrink/Basis Example</title>
+  <style>
+    .container {
+      display: flex;
+      justify-content: space-around;
+      background-color: lightgray;
+      padding: 20px;
+    }
+
+    .item {
+      background-color: lightblue;
+      margin: 10px;
+      padding: 20px;
+      height: 100px;
+      flex-grow: 1; /* Change to see grow effect */
+      flex-shrink: 1; /* Change to see shrink effect */
+      flex-basis: 100px; /* Initial width before grow/shrink */
+    }
+
+    .item:nth-child(2) {
+      flex-grow: 2; /* Grows twice as large as others */
+      background-color: lightcoral;
+    }
+  </style>
+</head>
+<body>
+  <h2>Flex Grow/Shrink/Basis</h2>
+  <div class="container">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!-- Example 4: Flex Wrap -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Wrap Example</title>
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: wrap; /* Change to nowrap or wrap-reverse */
+      justify-content: space-around;
+      background-color: lightpink;
+      padding: 20px;
+    }
+
+    .item {
+      width: 150px;
+      height: 100px;
+      background-color: lightseagreen;
+      margin: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h2>Flex Wrap: Wrap</h2>
+  <div class="container">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+    <div class="item">Item 5</div>
+    <div class="item">Item 6</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!-- Example 1: Row vs Column Layout -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Direction Example</title>
+  <style>
+    .container-row {
+      display: flex;
+      flex-direction: row; /* Items are arranged in a row (horizontal) */
+      justify-content: space-around;
+      background-color: lightyellow;
+      padding: 20px;
+      height: 150px;
+    }
+
+    .container-column {
+      display: flex;
+      flex-direction: column; /* Items are arranged in a column (vertical) */
+      justify-content: center;
+      background-color: lightcyan;
+      height: 300px;
+    }
+
+    .item {
+      padding: 20px;
+      margin: 10px;
+      background-color: lightcoral;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h2>Flex Direction: Row</h2>
+  <div class="container-row">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+  </div>
+
+  <h2>Flex Direction: Column</h2>
+  <div class="container-column">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+  </div>
+</body>
+</html>
