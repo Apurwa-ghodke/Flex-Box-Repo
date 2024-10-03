@@ -1,0 +1,65 @@
+/* Flexbox container properties */
+
+/* 1. display: flex - Defines a flex container */
+.container {
+    display: flex;
+    /* You can also use 'inline-flex' to create an inline flex container */
+  }
+  
+  /* 2. flex-direction - Defines the direction of the flex items */
+  .container {
+    flex-direction: row; /* default value: row, can also be column, row-reverse, or column-reverse */
+  }
+  
+  /* 3. flex-wrap - Defines whether the flex items should wrap or not */
+  .container {
+    flex-wrap: nowrap; /* default value: nowrap, can also be wrap or wrap-reverse */
+  }
+  
+  /* 4. justify-content - Aligns flex items along the main axis */
+  .container {
+    justify-content: flex-start; /* Can also be flex-end, center, space-between, space-around, or space-evenly */
+  }
+  
+  /* 5. align-items - Aligns flex items along the cross axis */
+  .container {
+    align-items: stretch; /* Can also be flex-start, flex-end, center, or baseline */
+  }
+  
+  /* 6. align-content - Aligns rows of flex items when there's extra space in the cross axis */
+  .container {
+    align-content: stretch; /* Can also be flex-start, flex-end, center, space-between, space-around */
+  }
+  
+  /* Flexbox item properties */
+  
+  /* 7. order - Controls the order of individual flex items */
+  .item {
+    order: 0; /* The default value is 0. Negative or positive integers can be used to reorder the items */
+  }
+  
+  /* 8. flex-grow - Defines how much a flex item will grow relative to the others */
+  .item {
+    flex-grow: 1; /* Default is 0, meaning it won’t grow. 1 allows it to grow relative to other items */
+  }
+  
+  /* 9. flex-shrink - Defines how much a flex item will shrink relative to the others */
+  .item {
+    flex-shrink: 1; /* Default is 1, meaning it will shrink if necessary. Set to 0 to prevent shrinking */
+  }
+  
+  /* 10. flex-basis - Defines the initial size of a flex item before growing/shrinking */
+  .item {
+    flex-basis: auto; /* Default is auto, but it can be set to a specific value like 50px, 20% */
+  }
+  
+  /* 11. flex - Shorthand for flex-grow, flex-shrink, and flex-basis */
+  .item {
+    flex: 1 1 auto; /* Equivalent to flex-grow: 1, flex-shrink: 1, flex-basis: auto */
+  }
+  
+  /* 12. align-self - Overrides the align-items value for specific flex items */
+  .item {
+    align-self: auto; /* Can also be flex-start, flex-end, center, baseline, stretch */
+  }
+  
