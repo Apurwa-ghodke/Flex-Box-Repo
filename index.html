@@ -1,16 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/styles.css">
-  <title>Flexbox Container Example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="flex-container">
-    <div class="item">Item 1</div>
-    <div class="item">Item 2</div>
-    <div class="item">Item 3</div>
-  </div>
+    <h1>Flexbox Property Visualizer</h1>
+    
+    <div class="controls">
+        <label for="flex-direction">Flex Direction:</label>
+        <select id="flex-direction">
+            <option value="row">Row</option>
+            <option value="row-reverse">Row Reverse</option>
+            <option value="column">Column</option>
+            <option value="column-reverse">Column Reverse</option>
+        </select>
+
+        <label for="flex-wrap">Flex Wrap:</label>
+        <select id="flex-wrap">
+            <option value="nowrap">No Wrap</option>
+            <option value="wrap">Wrap</option>
+            <option value="wrap-reverse">Wrap Reverse</option>
+        </select>
+
+        <label for="justify-content">Justify Content:</label>
+        <select id="justify-content">
+            <option value="flex-start">Flex Start</option>
+            <option value="flex-end">Flex End</option>
+            <option value="center">Center</option>
+            <option value="space-between">Space Between</option>
+            <option value="space-around">Space Around</option>
+            <option value="space-evenly">Space Evenly</option>
+        </select>
+
+        <label for="align-items">Align Items:</label>
+        <select id="align-items">
+            <option value="flex-start">Flex Start</option>
+            <option value="flex-end">Flex End</option>
+            <option value="center">Center</option>
+            <option value="baseline">Baseline</option>
+            <option value="stretch">Stretch</option>
+        </select>
+
+        <label for="align-content">Align Content:</label>
+        <select id="align-content">
+            <option value="flex-start">Flex Start</option>
+            <option value="flex-end">Flex End</option>
+            <option value="center">Center</option>
+            <option value="space-between">Space Between</option>
+            <option value="space-around">Space Around</option>
+            <option value="stretch">Stretch</option>
+        </select>
+
+        <label for="flex-item">Flex Item:</label>
+        <select id="flex-item">
+            <option value="1">Flex Grow: 1</option>
+            <option value="2">Flex Grow: 2</option>
+            <option value="0">Flex Grow: 0</option>
+        </select>
+    </div>
+
+    <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+        <div class="flex-item">6</div>
+        <div class="flex-item">7</div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
